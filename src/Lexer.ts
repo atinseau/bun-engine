@@ -22,21 +22,13 @@ class Lexer {
     this.tree = createSyntaxTree(this.tokens)
   }
 
-  public render() {
-    let html = ""
-    for (const node of this.tree) {
-      html += createElement(node)
-    }
-    return html
-  }
-}
-
-const render = (template: string) => {
-  return new Lexer(template).render()
-}
-
-export {
-  render
+  // public render() {
+  //   let html = ""
+  //   for (const node of this.tree) {
+  //     html += createElement(node)
+  //   }
+  //   return html
+  // }
 }
 
 export default Lexer;

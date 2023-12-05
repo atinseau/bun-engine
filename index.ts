@@ -1,7 +1,7 @@
 // Create a smart template engine
 // base on react logic inspired by qwik, svelte etc...
 
-import { render } from "./src/Lexer"
+import Lexer from "./src/Lexer"
 
 const template = `
   div.card
@@ -9,6 +9,4 @@ const template = `
     p.card__description ok les gars tout fonctionne bien !
 `
 
-const html = render(template)
-
-console.log(html)
+console.log(template)
